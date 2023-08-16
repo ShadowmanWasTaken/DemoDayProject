@@ -1,0 +1,106 @@
+html {
+    height:100%;
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #indexBody {
+    background-color: black;
+    font-family: "Helvetica";
+  }
+  
+  #h1Name {
+    color: #f5da9d;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  #CG {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: solid 10px #f5da9d;
+  }
+  
+  #button1 {
+    color: #f5da9d;
+    margin-left:630px;
+    margin-top: 50px;
+    font-size: 40px;
+    background-color: black;
+  }
+  
+  #Start {
+    color: #f5da9d;
+  }
+  
+  #head {
+    color: #f5da9d;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center
+  }
+  
+  #description {
+    color: #f5da9d;
+    text-align: center;
+  }
+  
+  #contact {
+    margin-left: 90%;
+    background-color: black;
+    font-size: 25px;
+  }
+  
+  #contacta {
+    color: #f5da9d;
+  }
+  
+  #margin{
+    margin-left:45%;
+  }
+  #insta{
+    height:50px;
+    width:50px;
+  }
+  #facebook{
+    height:50px;
+    width:50px;
+  }
+  #tiktok{
+     height:50px;
+    width:50px;
+  }
+  
+  #contactB{
+    background-color:black;
+    font-family: "Helvetica";
+  }
+  
+  #contactH1{
+    color: #f5da9d;
+    text-align:center;
+    font-size:40px;
+    
+  }
+  #contactP{
+      color: #f5da9d;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+  }
+  #contactMessage{
+      font-size:25px;
+    border:solid 5px #f5da9d;
+    margin-left:600px;
+  }
+  #buttonM{
+    font-size:25px;
+    border:solid 5px #f5da9d;
+    margin-left:700px;
+  }

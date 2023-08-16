@@ -1,0 +1,392 @@
+body{
+    background-color: #75E6DA
+  }
+  
+  
+  #intro{
+    font-size: 100px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: white;
+  
+    animation: transitions 2s
+  }
+  
+  #start{
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    border: solid black 5px;
+    border-radius: 20px;
+      padding: 50px 50px;
+      transform: translate(600px, 100px);
+      animation-delay: 2s;
+      animation: revealer 2s;
+      
+  }
+  
+  #start:hover{
+    cursor: pointer;
+    background-color:rgb(201, 93, 203);
+  }
+  
+  
+  
+  @keyframes transitions {
+  from{
+  
+  transform: translateX(-1000px);
+  }
+  
+  
+  to{
+    transform: translateX(0px);
+  
+  }
+  
+  
+  
+  }
+  
+  @keyframes revealer {
+    0%{
+  
+      opacity: 0;
+      }
+      
+      
+      100%{
+        opacity:1;
+      
+      }
+  
+  
+  }
+  
+  
+  @keyframes reSize {
+  
+  from{
+    font-size: 30px;
+  }
+  
+  
+  
+  to{
+    font-size: 95px;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #selected{
+    z-index: 2;
+    position:absolute;
+    padding: 5px 5px;
+    background-color: rgb(114, 217, 114);
+    border: solid 3px green;
+    border-radius: 15px; 
+    transform: translate(410px, 230px);
+    opacity: 0;
+  }
+  
+  
+  #selected2{
+    z-index: 2;
+    position:absolute;
+    padding: 5px 5px;
+    background-color: rgb(114, 217, 114);
+    border: solid 3px green;
+    border-radius: 15px; 
+    transform: translate(1000px, 230px);
+    opacity: 0;
+  }
+  
+  
+  #prompt{
+    background: rgb(201, 93, 203);
+    border: solid 3px black;
+    border-radius: 15px;
+    position:relative;
+    z-index: 5;
+    transform: translate(0px,40px);
+   text-align: center;
+   margin: 0px 250px;
+   opacity:0;
+    
+  }
+  
+  .idek{
+    background: linear-gradient(to right, rgb(10, 224, 227), rgb(11, 206, 37));
+    
+  }
+  
+  .carousel {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    
+    .carousel  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: ease-in-out 200ms opacity;
+      transition-delay: 200ms;
+      
+    }
+    
+    .slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .slide[data-active] {
+      opacity: 1;
+      z-index: 1;
+      transition-delay: 0;
+      
+    }
+    
+    .carousel-button {
+      position: absolute;
+      z-index: 2;
+      background: none;
+      border: none;
+      font-size: 4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, .5);
+      cursor: pointer;
+      border-radius: .25rem;
+      padding: 0 .5rem;
+      background-color: rgba(0, 0, 0, .1);
+    }
+    
+    .carousel-button:hover,
+    .carousel-button:focus {
+      color: white;
+      background-color: rgba(0, 0, 0, .2);
+    }
+    
+    .carousel-button:focus {
+      outline: 1px solid black;
+    }
+    
+    .carousel-button.prev {
+      left: 1rem;
+    }
+    
+    .carousel-button.next {
+      right: 1rem;
+    }
+  
+  
+  
+  
+  
+    #bank, #amount{
+      text-align: center;
+      background-color: rgb(206, 206, 145);
+      border: solid lightyellow 10px;
+      margin: 0px 600px;
+      padding: 10px 0px;
+      border-radius: 15px;
+      opacity:0;
+  
+  }
+  
+  #amount{
+      font-size: 20px;
+  }
+  
+  
+  .topContain img{
+    border: 4px solid black;
+    box-shadow: 0px 0px 7px 2px rgb(85, 91, 91);
+      position:absolute;
+      width: 300px;
+      height:300px;
+      transform: translate(-150px, -150px)
+  }
+  
+  
+  .topContain{
+  display:flex; 
+  justify-content: space-evenly;
+  
+  
+  }
+  
+  #leftimg, #rightimg, #leftimg2, #rightimg2, #leftimg3, #rightimg3, #leftimg4,#rightimg4,#leftimg5,#rightimg5, #rightimg6,#leftimg6, #rightimg7, #leftimg7, #rightimg8,#leftimg8{
+      margin-top: 100px;
+      color: white;
+      background-color:rgb(0, 0, 0);
+      padding: 150px 150px;
+      object-fit: contain;
+  
+  }
+  
+  
+  
+  #rightimg::before, #rightimg2::before,#rightimg3::before, #rightimg4::before, #rightimg5::before, #rightimg6::before, #rightimg7::before, #rightimg8::before{
+      position: absolute;
+      display: block;
+      background: rgb(201, 93, 203);
+      border: solid 3px black;
+      border-radius: 15px;
+      transform: translate(-65px, 200px);
+      padding: 5px 15px;
+      }
+  
+    #rightimg::before{
+      content: "MacBook Air- $999"
+    }
+  
+  #rightimg2::before{
+    content: "Iphone 13 (regular) - $699"
+  }
+  
+  #rightimg3::before{
+    content: "PS4 - $299"
+  }
+  
+  #rightimg4::before{
+    content: "ASICS - $60"
+  }
+  
+  #rightimg5::before{
+    content: "Airpods Pro - $199"
+  }
+  
+  #rightimg6::before{
+    content: "Carhartt Jacket- $109";
+  }
+  #rightimg7::before{
+    content: "Jansport - $38"
+  }
+  
+  #rightimg8::before{
+    content: "Tempur-Pedic- $62"
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  #leftimg::before, #leftimg2::before,#leftimg3::before, #leftimg4::before, #leftimg5::before, #leftimg6::before, #leftimg7::before, #leftimg8::before{
+      position: absolute;
+      display: block;
+      background: rgb(201, 93, 203);
+      border: solid 3px black;
+      border-radius: 15px;
+      transform: translate(-65px, 200px);
+      padding: 5px 15px;
+      
+      
+      
+  }
+  
+  
+  #leftimg::before{
+    content: "Macbook Pro-$1299"
+  }
+  #leftimg2::before{
+    content: "IPhone 15 Pro-$1099"
+  }
+  #leftimg3::before{
+    content: "PS5-$449"
+  }
+  #leftimg4::before{
+    content: "Jordans-$300"
+  }
+  #leftimg5::before{
+    content: "AirPods Max- $499"
+  }
+  
+  #leftimg6::before{
+    content: "North Face Jacket-$350";
+  }
+  
+  #leftimg7::before{
+    content: "North Face Recon - $109"
+  }
+  
+  #leftimg8::before{
+    content: "Casper- $34";
+  }
+  
+  
+  
+  
+  #submit, #submit2,#submit3, #submit4, #submit5, #submit6, #submit7, #submit8{
+      width: 100px;
+      height:  100px;
+      position: absolute;
+      border: rgb(5, 6, 5) 3px solid;
+      border-radius: 15px;
+      background-color: green;
+      transform: translate(700px, 80px);
+  }
+  
+  
+  #end{
+    font-size: 100px;
+    color: red; 
+    font-family: 'Press Start 2P';
+    text-align:center;
+    transform: translate(0px, 200px);
+  }
+  
+  
+  #winner{
+    position: absolute;
+    font-size: 95px;
+    color: rgb(67, 173, 55); 
+    font-family: 'Press Start 2P';
+    text-align:center;
+    transform: translate(0px, 25px);
+    
+  }
+  
+  #win{
+    position: absolute;
+    font-size: 65px;
+    color: rgb(67, 173, 55); 
+    font-family: 'Press Start 2P';
+    text-align:center;
+    transform: translate(280px, 155px);
+  }
+  
+  #earnings{
+    position: relative; 
+    font-size: 65px;
+    color: rgb(67, 173, 55); 
+    font-family: 'Press Start 2P';
+    text-align:center;
+    transform: translateY(350px);
+  
+  }
